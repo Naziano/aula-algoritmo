@@ -1,0 +1,17 @@
+<html>
+    <script>
+        let letra = prompt('Digite M ou F');
+
+        letra = letra.toLowerCase().trim();// tolowercasea, transforma em minusculo/trim, remove espaço desnecessários.
+
+        if (letra == 'm') {
+            resposta = 'M - Masculino';
+        } else if (letra == 'f') {
+            resposta = 'F - Feminino';
+        } else {
+            resposta = 'Sexo Invalido';
+        }
+
+        alert(resposta);
+    </script>
+</html>

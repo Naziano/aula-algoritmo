@@ -1,0 +1,48 @@
+<html>
+    <meta charset="UTF-8">
+
+    <script>
+    let nota1 = parseFloat(prompt('Digite a nota 1'));
+    let nota2 = parseFloat(prompt('Digite a nota 2'));
+
+    let media = (nota1 + nota2) / 2;
+
+    let resposta = 'Reprovado';
+
+    if (isNaN(media) || media < 0 || media > 10) {
+        resposta = 'Entrada inválida!';
+    }
+    else if (media == 10) {
+        resposta = 'Aprovado com Distinção';
+    } else if (media >= 7) {
+        resposta = 'Aprovado';
+    }
+
+    alert(media.toFixed(2));
+    alert(resposta);
+
+    </script>
+</html>
+
+
+<!--Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+
+A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+A mensagem "Reprovado", se a média for menor do que sete;
+A mensagem "Aprovado com Distinção", se a média for igual a dez.
+
+    Operações Relacionais
+
+    > maior que
+    < menor que
+    >= maior ou igual a
+    <= menor ou igual a
+    == igual a
+    != diferente de
+
+    Operadores Lógico
+
+    || ou lógico (OR)
+    && É lógico (AND)
+    ! não lógico (NOT)
+-->

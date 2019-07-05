@@ -1,0 +1,46 @@
+<html>
+    <meta charset="UTF-8">
+
+    <script>
+     let numero1 = parseFloat(prompt('Informe o número 1'));
+    let maior = numero1;
+    let menor = numero1;
+
+    let numero2 = parseFloat(prompt('Informe o número 2'));
+    if (numero2 > maior) {
+        maior = numero2;
+    } else {
+        menor = numero2;
+    }
+
+      let numero3 = parseFloat(prompt('Informe o número 3'));
+      if (numero3 > maior) {
+          maior = numero3;
+    } else if (numero3 < menor) {
+        menor = numero3;
+    }
+
+    alert('Maior: ' + maior + '\nMenor: ' + menor);
+    
+    </script>
+</html>
+
+
+<!--Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+    Operações Relacionais
+
+    > maior que
+    < menor que
+    >= maior ou igual a
+    <= menor ou igual a
+    == igual a
+    != diferente de
+
+    Operadores Lógico
+
+    || ou lógico (OR)
+    && É lógico (AND)
+    ! não lógico (NOT)
+    \n é o (br) do javascript
+-->

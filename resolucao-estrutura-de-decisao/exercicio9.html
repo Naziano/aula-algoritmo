@@ -1,0 +1,51 @@
+<html>
+    <meta charset="UTF-8">
+
+    <script>
+    let valorA = parseInt(prompt('Informe o número 1'));
+    let valorB = parseInt(prompt('Informe o número 2'));
+    let valorC = parseInt(prompt('Informe o número 3'));
+
+    let auxiliar = 0;
+
+    if (valorA > valorB) {
+        auxiliar = valorA;
+        valorA = valorB;
+        valorB = auxiliar;
+    }
+
+    if (valorB > valorC) {
+        auxiliar = valorB;
+        valorB = valorC;
+        valorC = auxiliar;
+    }
+
+    if (valorA > valorB) {
+        auxiliar = valorA;
+        valorA = valorB;
+        valorB = auxiliar;
+    }
+
+    alert(valorC + '>' + valorB + '>' + valorA);
+   
+    </script>
+</html>
+
+<!--Faça um Programa que leia três números e mostre-os em ordem decrescente.
+
+    Operações Relacionais
+
+    > maior que
+    < menor que
+    >= maior ou igual a
+    <= menor ou igual a
+    == igual a
+    != diferente de
+
+    Operadores Lógico
+
+    || ou lógico (OR)
+    && É lógico (AND)
+    ! não lógico (NOT)
+    \n é o (br) do javascript
+-->

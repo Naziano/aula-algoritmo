@@ -1,4 +1,6 @@
-let resposta = prompt('Digite o turno que você estuda: \nM-Matutino\nV-Vespertino\nN-Noturno').toLowerCase().trim();
+let resposta = prompt('Digite o turno que você estuda: \nM-Matutino\nV-Vespertino\nN-Noturno').toLowerCase().trim().charAt(0);
+
+resposta = resposta.trim().charAt(0).toLowerCase();
 
 switch(resposta) {
 
@@ -15,8 +17,5 @@ switch(resposta) {
     break;
 
     default:
-    alert('Opção Inválida');
-
-
-
+    alert('Opção Inválida!');
 }

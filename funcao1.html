@@ -1,0 +1,44 @@
+<!-- Aula 01 Função -->
+
+
+<html>
+    <script>
+    
+    function ola() {
+        return 'Olá Mundo!!!';
+    }
+
+    function ehNumero(numero) {
+        return !isNaN(numero);
+    }
+
+
+    function soNumero(texto) {
+        let numero = '';
+
+        do {numero = prompt(texto);
+            numero = parseFloat(numero);
+            if (ehNumero(numero)) {
+                return numero;
+            }
+        } while(!ehNumero(numero));
+    }
+
+    function somaVetor(vetor) {
+        let soma = 0;
+        for (let i = 0; i < vetor.length; i++) {
+            if (ehNumero(vetor[i])) {
+                soma += vetor[i];
+            }
+        }
+        return soma;
+    }
+
+
+    //let numero1 = soNumero('Diga o número 1');
+    //let numero2 = soNumero('Diga o número 2');
+    let numero = [ 1,2,3,4,5,];
+    alert(somaVetor(numero));
+    
+    </script>
+</html>

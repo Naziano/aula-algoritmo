@@ -2,8 +2,8 @@
 
 
 <html>
-    <script>
-    
+<script>
+
     function ola() {
         return 'Olá Mundo!!!';
     }
@@ -16,12 +16,13 @@
     function soNumero(texto) {
         let numero = '';
 
-        do {numero = prompt(texto);
+        do {
+            numero = prompt(texto);
             numero = parseFloat(numero);
             if (ehNumero(numero)) {
                 return numero;
             }
-        } while(!ehNumero(numero));
+        } while (!ehNumero(numero));
     }
 
     function somaVetor(vetor) {
@@ -34,11 +35,35 @@
         return soma;
     }
 
+    function fatorial(numero) {
+        if (ehNumero(numero)) {
+            let resultado = 1;
+            for (let i = numero; i > 0; i--) {
+                resultado *= i;
+            }
+            return resultado;
+        }
+        return 0;
+    }
+
+
+    function fatorialR(numero) {
+        if(numero == 1) {
+            return 1;
+        } else {
+            return numero * fatorialR(numero - 1);
+        }
+        //return numero == 1? 1 : numero * fatorialR(numero - 1);
+    }
+
+    let numero = ['te', 1, 2, 3, 4, 'wes', 5,];
+    alert(fatorialR(5));
+
 
     //let numero1 = soNumero('Diga o número 1');
     //let numero2 = soNumero('Diga o número 2');
-    let numero = [ 1,2,3,4,5,];
-    alert(somaVetor(numero));
-    
-    </script>
+
+
+</script>
+
 </html>
